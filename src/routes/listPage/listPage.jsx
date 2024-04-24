@@ -2,6 +2,7 @@ import './listPage.scss'
 import {listData} from "../../lib/dummyData.js";
 import Filter from "../../components/filter/filter.jsx";
 import Card from "../../components/card/card.jsx";
+import Map from "../../components/map/map.jsx";
 
 const ListPage = () => {
 
@@ -17,7 +18,9 @@ const ListPage = () => {
                     }
                 </div>
             </div>
-            <div className={'mapContainer'}>map</div>
+            <div className={'mapContainer'}>
+                <Map items={data} />
+            </div>
         </div>
     )
 }
